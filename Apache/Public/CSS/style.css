@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+background-image: url("space2.jpg");
+}
+
+h2{
+  color: rgb(112, 208, 240);
+  text-shadow: 1px 2px 3px black;
+}
+
+label{
+color:#5dcff1;
+}
+
+tr{
+  height: 30px;
+}
+
+span{
+  color: red;
+}
+
+header{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background: black;
+  width: 100%;
+  height: 14vh;
+  margin-top: 0;
+  box-shadow: 0    0   1px #dbf5ee,
+              1px 1px 2px  #b5f5dc,
+              2px 2px 3px #a5eeee,
+              2px 3px 4px #7deaee,
+              2px 4px 5px rgb(112, 208, 240),
+              0   6px 6px #68f3e0,
+              1px 7px 7px #5dcff1;
+}
+
+#erase,#create_button,#register,#connect_button{
+  background: black;
+  color: rgb(130, 224, 255);
+  text-decoration:none; 
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: 'Iceland';
+  font-size: 16px;
+  width: 20%;
+}
+
+#erase,#create_button,#register,#connect_button:hover{
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+#connect_mail,#connect_password,#create_user,#create_mail,#create_password,#create_password1{
+  background: black;
+  color: rgb(130, 224, 255);
+  text-decoration:none; 
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: 'Iceland';
+  font-size: 16px;
+}
+ 
+#connect_mail,#connect_password,#create_user,#create_mail,#create_password,#create_password1:hover{
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+#connection{
+  width: 30%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+}
+
+#connection>h2{
+  margin: auto;
+  text-align: center;
+}
+
+#connection>form>label{
+  color: white;
+}
+
+#connection>form>input#register{
+  margin-left: 5%
+}
+
+/* ------ GESTION DU H1 NEON -----------------------*/
+
+h1{
+  grid-column: 2/5;
+  color: #5dcff1;
+  align-self: center;
+  justify-self: center; 
+  margin-top: -0.9%;
+}
+
+a{
+  text-decoration:none; 
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+h1 a{
+  font-size:1.5em;
+  color: #5dcff1;
+  font-family: 'Iceland';
+}
+
+h1 a:hover{
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+} 
+
+/*glow for webkit*/
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #228DFF,
+               0 0 70px  #228DFF,
+               0 0 80px  #228DFF,
+               0 0 100px #228DFF,
+               0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #228DFF,
+               0 0 35px #228DFF,
+               0 0 40px #228DFF,
+               0 0 50px #228DFF,
+               0 0 75px #228DFF;
+  }
+}
+
+/*glow for mozilla*/
+@-moz-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #228DFF,
+               0 0 70px  #228DFF,
+               0 0 80px  #228DFF,
+               0 0 100px #228DFF,
+               0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #228DFF,
+               0 0 35px #228DFF,
+               0 0 40px #228DFF,
+               0 0 50px #228DFF,
+               0 0 75px #228DFF;
+  }
+}
+
+/*glow*/
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #228DFF,
+               0 0 70px  #228DFF,
+               0 0 80px  #228DFF,
+               0 0 100px #228DFF,
+               0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #228DFF,
+               0 0 35px #228DFF,
+               0 0 40px #228DFF,
+               0 0 50px #228DFF,
+               0 0 75px #228DFF;
+  }
+}
+
+
+
+
+.form-style-8{
+	font-family: 'Iceland';
+	width: 400px;
+	padding: 30px;
+	background: #081118;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.form-style-8 h2{
+	background: black;
+	text-transform: uppercase;
+	font-family: 'Iceland';
+	color: #5dcff1;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+}
+
+.form-style-8 input[type="email"],
+.form-style-8 input[type="password"]
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px 'Iceland';
+	height: 45px;
+}
+.form-style-8 textarea{
+	resize:none;
+	overflow: hidden;
+}
+ 

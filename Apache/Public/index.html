@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=!">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/script.js" async></script>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <title>Accueil Galactica.io</title>
+</head>
+<body>
+    <header>
+    <h1><a href="">Galactica.io</a></h1>
+    </header><br><br>
+    <!-- Formulaire de connection au compte -->
+    <div id="connection">
+        <h2>SE CONNECTER</h2><br>
+            <form action="" method="post" id="form_connect">
+                <input type="email" name="connect_mail" id="connect_mail" placeholder="Adresse Mail" required><br><br>
+                <input type="password" name="connect_password" id="connect_password" placeholder="Mot de Passe" required><br><br>
+                <input type="submit" value="Se connecter" id="connect_button"><br><br>
+                <label>Vous n'avez pas de compte ?</label><input type="button" value="Créer" id="register">
+            </form>
+    </div>
+    <!-- Formulaire de création de compte -->
+    <div id="creation">
+        <h2>CREER UN COMPTE</h2><br>
+        <table>
+            <form action="" method="post" id="form_register">
+                &larr;<a href=""> Retour</a><br><br>   <!--javascript:history.go()-->
+                <tr><td><label>Entrez votre nom d'Utilisateur :</label></td><td>
+                <input type="text" name="create_user" id="create_user" placeholder="Nom Utilisateur" required></td></tr>
+                <tr><td><label>Entrez votre adresse mail :</label></td><td>
+                <input type="email" name="create_mail" id="create_mail" placeholder="Adresse Mail" required></td></tr>
+                <tr><td><label>Entrez votre mot de passe :</label></td><td>
+                <input type="password" name="create_password" id="create_password" placeholder="Mot de Passe"></td></tr>
+                <tr><td><label>Confirmez votre mot de passe :</label></td><td>
+                <input type="password" name="create_password1" id="create_password1" placeholder="Confirmez mot de Passe"></td></tr>
+                <tr height="10px"></tr><tr><td></td><td align="right"><input type="reset" value="Effacer" id="erase">
+                <input type="submit" value="Créer" id="create_button"></td></tr><tr>
+            </form> 
+        </table>
+    </div>
+
+    <div class="form-style-8">
+        <h2>Se connecter</h2>
+        <form>
+          <input type="email" name="field2" placeholder="Adresse Mail">
+          <input type="password" name="field2" placeholder="Mot de Passe">
+          <input type="button" value="Connexion"><br><br>
+          <label>Vous n'avez pas de compte ?</label>
+          <input type="button" value="Créer">
+        </form>
+      </div>
+</body>
+</html>

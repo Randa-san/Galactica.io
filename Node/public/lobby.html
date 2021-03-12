@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' />
+    <title>Lobby Galactica.io</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="script/script.js" async></script>
+    <script src="script/script_game.js" async></script>
+    <script src="pixi/pixi.min.js"></script>
+    <script src="script/classes/Player.class.js" async></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1><a href="">Galactica.io</a></h1>
+            <button class="logout">Déconnexion</button>
+            <button id="historique">Historique</button>
+        </header>
+        <!-- Main -->
+        <main class="plateau">
+            <button id="play">Jouer</button>
+        </main>
+        <main class="plateau2"></main>
+        <main class="historique" id="chart_div"></main>
+        <!-- Bouton masquer -->
+        <button id="hide">Masquer</button>
+        <!-- Fenêtre du chat -->
+        <section id="chat">
+            <div class="container_area">
+                <ul id="users">
+                    <center>
+                        <strong>Joueurs Connectés</strong>
+                    </center>
+                </ul>
+                <ul id="messages"></ul>
+            </div>
+            <div class="zone_saisie">
+                <form action="">
+                    <input id="m" autocomplete="off">
+                    <button>Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
